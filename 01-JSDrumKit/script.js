@@ -11,8 +11,6 @@ function playSound(e) {
     key.classList.toggle('playing')
 }
 
-
-
 const keys = document.querySelectorAll('.key')
 keys.forEach(key => { key.addEventListener('transitionend', removeTransition)
 
