@@ -28,14 +28,14 @@
       // Array.prototype.some() // is at least one person 19 or older?
 
       const someArray = people.some(
-        (person) => new Date().getFullYear() - person.year > 19
+        (person) => new Date().getFullYear() - person.year >= 19
       );
 
       console.log(someArray);
       // Array.prototype.every() // is everyone 19 or older?
 
       const everyArray = people.every(
-        (person) => new Date().getFullYear() - person.year > 19
+        (person) => new Date().getFullYear() - person.year >= 19
       );
 
       console.log(everyArray);
@@ -54,6 +54,7 @@
 
       const index = comments.findIndex(({ id }) => id === 823423);
       console.log(index);
+      comments.splice(index, 1);
     </script>
   </body>
 </html>
