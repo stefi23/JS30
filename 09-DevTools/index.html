@@ -8,10 +8,13 @@
     <p onClick="makeGreen()">×BREAK×DOWN×</p>
 
     <script>
-      const dogs = [
-        { name: "Bruno", age: 2 },
-        { name: "Hugo", age: 8 },
-      ];
+      // console.group("Console group example");
+      // console.log(`One`);
+      // console.log(`Two`);
+      // console.log(`Three`);
+      // console.groupEnd("Console group example");
+
+      const cats = ["Juno", "Luna", "Zoe"];
 
       function makeGreen() {
         const p = document.querySelector("p");
@@ -20,90 +23,106 @@
       }
 
       // 1. REGULAR console.log
-      console.log("hello");
+      // console.log("hello");
 
       // 2. INTERPOLATED
-      console.log("Hello I am a %s string!", "💩");
+      // console.log("Hello I am a %s string!", "💩");
 
       // 3. STYLED - cool stuff
-      console.log(
-        "%c I am some great text",
-        "font-size:50px; background:yellow; text-shadow: 10px 10px 0 blue; margin-bottom:20px"
-      );
+      // console.log(
+      //   "%c I am some great text",
+      //   "font-size:50px; background:yellow; text-shadow: 10px 10px 0 blue; margin-bottom:20px"
+      // );
 
-      console.log(
-        "%c Hello, LADY!",
-        "font-size:50px; background:red; color:blue; padding:10px; border-radius:10px"
-      );
+      // console.log(
+      //   "%cDebug with style with these console.log tricks",
+      //   "font-size:50px; background:#F9F9F9; color:#581845; padding:10px; border-radius:10px; border: 7px solid #581845;"
+      // );
 
       // 4. WARNING!
-      console.warn("OH NOOO");
+      // console.warn("Somethings is up but it's almost ok");
 
       // 5. ERROR :|
-      console.error("Shit!");
+      // console.error("Something is off!");
 
       // 6. INFO
-      console.info("Crocodiles eat 3-4 people per year");
+      // console.info("Hey there! I'm Stefi!");
 
       // 7. TESTING
       const p = document.querySelector("p");
 
-      console.assert(p.classList.contains("text-red"), "That is wrong!");
+      // console.assert(p.classList.contains("text-red"), "That is wrong!");
 
       // 8. CLEARNING THE CONSOLE with this simple comand
       //   console.clear();
 
       //  9. VIEWING DOM ELEMENTS - different styles
-      console.log(p);
-      console.dir(p);
+      // console.log(p);
+      // console.dir(p);
 
       //console.clear();
 
       // 10. Grouping together
       // 10.1
-      dogs.forEach((dog) => {
-        console.group(`${dog.name}`);
-        console.log(`This is ${dog.name}`);
-        console.log(`${dog.name} is ${dog.age} years old`);
-        console.log(`${dog.name} is ${dog.age * 7} dog years old`);
-        console.groupEnd(`${dog.name}`);
-      });
 
+      const dogs = [
+        { name: "Ashley", age: 5 },
+        { name: "Bruno", age: 2 },
+        { name: "Hugo", age: 8 },
+      ];
+
+      // dogs.forEach((dog) => {
+      //   console.group(`${dog.name}`);
+      //   console.log(`This is ${dog.name}`);
+      //   console.log(`${dog.name} is ${dog.age} years old`);
+      //   console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+      //   console.groupEnd(`${dog.name}`);
+      // });
+
+      // console.group("cat array");
+      // cats.map((cat) => {
+      //   console.log("this is", cat);
+      // });
+      // console.groupEnd("cat array");
       // 10.2 Collapsed
-      dogs.forEach((dog) => {
-        console.groupCollapsed(`${dog.name}`);
-        console.log(`This is ${dog.name}`);
-        console.log(`${dog.name} is ${dog.age} years old`);
-        console.log(`${dog.name} is ${dog.age * 7} dog years old`);
-        console.groupEnd(`${dog.name}`);
-      });
+      // dogs.forEach((dog) => {
+      //   console.groupCollapsed(`${dog.name}`);
+      //   console.log(`This is ${dog.name}`);
+      //   console.log(`${dog.name} is ${dog.age} years old`);
+      //   console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+      //   console.groupEnd(`${dog.name}`);
+      // });
+
+      // const emoji = "🙈";
+      // console.log("This is my favorite emoji %s!", emoji);
 
       // 11. COUNTING
 
-      console.count("Wes");
-      console.count("Wes");
-      console.count("Steve");
-      console.count("Steve");
-      console.count("Wes");
-      console.count("Steve");
-      console.count("Wes");
-      console.count("Steve");
-      console.count("Steve");
-      console.count("Steve");
-      console.count("Steve");
-      console.count("Steve");
+      // console.count("Wes");
+      // console.count("Wes");
+      // console.count("Steve");
+      // console.count("Steve");
+      // console.count("Wes");
+      // console.count("Steve");
+      // console.count("Wes");
+      // console.count("Steve");
+      // console.count("Steve");
+      // console.count("Steve");
+      // console.count("Steve");
+      // console.count("Steve");
 
       // 12. TIMING
-      console.time("fetching data");
-      fetch("https://api.github.com/users/wesbos")
-        .then((data) => data.json())
-        .then((data) => {
-          console.timeEnd("fetching data");
-          console.log(data);
-        });
+      // console.time("fetching data");
+      // fetch("https://api.github.com/users/wesbos")
+      //   .then((data) => data.json())
+      //   .then((data) => {
+      //     console.timeEnd("fetching data");
+      //     console.log(data);
+      //   });
 
       // 13. TABLE for ARRAYS
       console.table(dogs);
+      console.table(cats);
     </script>
   </body>
 </html>
