@@ -4,6 +4,6 @@
 
 My goal is to get super comfortable with syntax and concepts. Why? Cause when I have to do something I want to know what options I have. This is why I choose to do another JS tutorial.
 
-I will follow [JavaScript30 by Wes Bos](https://javascript30.com/). It's won't involve any frameworks, compilers, boilerplate, and libraries.
+I will follow [JavaScript30 by Wes Bos](https://javascript30.com/). It won't involve any frameworks, compilers, boilerplate, and libraries.
 
 Vamoooos 💃
